@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: auto;
+}
+
+h1 {
+  font-family: "Fraunces", serif;
+  color: hsl(212, 21%, 14%);
+}
+
+.sale-price {
+  font-family: "Fraunces", serif;
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: hsl(158, 36%, 37%);
+  margin-right: 20px;
+}
+
+.description,
+.category {
+  font-family: "Montserrat", serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: hsl(228, 12%, 48%);
+}
+
+.description {
+  margin-top: 15px;
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: white;
+  margin: 0px 20px;
+}
+
+#mobile-image {
+  max-width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.category {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 10px;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px;
+  padding: 15px;
+}
+
+.price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.original-price {
+  font-family: "Fraunces", serif;
+  font-size: 0.875rem;
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  color: white;
+  background-color: hsl(158, 36%, 37%);
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 15px 0px;
+  max-width: 100%;
+}
+
+button > img {
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: hsl(158, 62%, 20%);
+}
+
+@media screen and (min-width: 1440px) {
+  #mobile-image {
+    display: none;
+  }
+
+  .container {
+    max-width: 600px;
+    flex-direction: row;
+  }
+
+  #desktop-image {
+    max-width: 300px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-bottom: -5px;
+  }
+
+  .product-info {
+    margin-left: 2%;
+    margin-right: 20px;
+  }
+
+  .category {
+    margin: 20px 0px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #desktop-image {
+    display: none;
+  }
+
+  .container {
+    max-height: 700px;
+  }
+}
