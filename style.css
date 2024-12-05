@@ -130,7 +130,40 @@ button:hover {
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 768px) {
+  .mobile-image {
+    display: none;
+  }
+
+  .container {
+    max-width: 600px;
+    flex-direction: row;
+  }
+
+  .desktop-image {
+    max-width: 300px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-bottom: -5px;
+  }
+
+  .product-info {
+    margin-left: 2%;
+    margin-right: 20px;
+  }
+
+  .category {
+    margin: 20px 0px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .desktop-image {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
   .desktop-image {
     display: none;
   }
