@@ -49,7 +49,7 @@ h1 {
   margin: 0px 20px;
 }
 
-#mobile-image {
+.mobile-image {
   max-width: 100%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -104,7 +104,7 @@ button:hover {
 }
 
 @media screen and (min-width: 1440px) {
-  #mobile-image {
+  .mobile-image {
     display: none;
   }
 
@@ -113,7 +113,7 @@ button:hover {
     flex-direction: row;
   }
 
-  #desktop-image {
+  .desktop-image {
     max-width: 300px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -131,11 +131,7 @@ button:hover {
 }
 
 @media screen and (max-width: 375px) {
-  #desktop-image {
+  .desktop-image {
     display: none;
-  }
-
-  .container {
-    max-height: 700px;
   }
 }
